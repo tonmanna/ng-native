@@ -1,0 +1,11 @@
+<GridLayout rows="auto"class="action-bar">
+    <Button text="Close" (tap)="close()" row="0" col="0" class="action-item"></Button>
+    <Label text="Detail" textWrap="true" row="0" col="1" class="action-bar-title p-l-10"></Label>
+</GridLayout>
+<StackLayout class="p-t-30">
+    <ListView [items]="items$ | async" (itemTap)="onItemTap($event)" class="list-group" ios:height="100%" android:height="40%">
+        <template let-item="item" let-odd="odd" let-even="even">
+                <Label [text]="item.title" class="list-group-item"></Label>
+        </template>
+    </ListView>
+</StackLayout>

@@ -1,0 +1,13 @@
+<ActionBar title="About" class="action-bar"></ActionBar>
+<StackLayout>
+    <Label text="About tonman.com" class=" H1"></Label>
+    <Label text="The most amazing Javascript tutorials and video workshops." class="h3" textWrap="true"></Label>
+    <Button (tap)="openModal()" text="Read More" class="m-10 btn btn-primary"></Button>
+
+    <StackLayout>
+        <CheckBox #CB1 text="ทดสอบภาษาไทยบนปุ่ม" checked="false"></CheckBox>
+        <Button (tap)="toggleCheck()" text="Toggle it!"></Button>
+        <Button (tap)="getCheckProp()" text="Check Property"></Button>
+    </StackLayout>
+
+</StackLayout>
